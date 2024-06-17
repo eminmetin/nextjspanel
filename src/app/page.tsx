@@ -12,6 +12,11 @@ const Home = () => {
       <div className='slider'>
         <SliderComponent />
       </div>
+      <div className='chart mt-10 w-4/5 flex justify-between mx-auto'>
+        <div className='w-2/5'>
+          <LineChart />
+        </div>
+      </div>
       <div className='footer'>
         <Footer />
       </div>
