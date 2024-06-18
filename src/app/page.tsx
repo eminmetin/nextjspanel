@@ -1,5 +1,6 @@
-import LineChart from '@/components/anlysis/LineChart';
+import LineChartDataSection from '@/components/anlysis/LineChartDataSection';
 import Footer from '@/components/footer/Footer';
+import Card from '@/components/helpers/Card';
 import Navbar from '@/components/navbar/Navbar';
 import SliderComponent from '@/components/slider/SliderComponent';
 
@@ -12,10 +13,9 @@ const Home = () => {
       <div className='slider'>
         <SliderComponent />
       </div>
-      <div className='chart mt-10 w-4/5 flex justify-between mx-auto'>
-        <div className='w-2/5'>
-          <LineChart />
-        </div>
+      <div className='chart w-4/5 flex justify-between mx-auto bg-white mt-8 p-8 shadow-xl'>
+        <LineChartDataSection />
+        <Card />
       </div>
       <div className='footer'>
         <Footer />

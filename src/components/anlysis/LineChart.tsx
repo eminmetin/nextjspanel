@@ -10,8 +10,6 @@ import {
   PointElement,
   LinearScale,
   CategoryScale,
-  ChartOptions,
-  Scale,
 } from 'chart.js';
 import { lineChartData } from '../anlysis/data';
 ChartJS.register(
@@ -24,15 +22,20 @@ ChartJS.register(
   Legend
 );
 
-const LineChart = () => {
-  // Veri seti
-  const options = {};
-  const data = {};
+const LineChart = ({ className }: any) => {
+  const options: any = {
+    plugins: {
+      legend: false,
+    },
+    maintainAspectRatio: false,
+  };
 
   return (
-    <div>
-      <Line options={options} data={lineChartData} />
-    </div>
+    <Line
+      className={`h-full ${className}`}
+      options={options}
+      data={lineChartData}
+    />
   );
 };
 
