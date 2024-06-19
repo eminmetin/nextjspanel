@@ -3,7 +3,7 @@ import React from 'react';
 const StatCard = ({ icon, title, description, value, className }: any) => {
   return (
     <div
-      className={`bg-white shadow rounded p-4 flex items-center space-x-4 ${className}`}
+      className={`border border-slate-300 shadow-sm rounded p-4 flex items-center space-x-4 ${className}`}
     >
       <div className='text-2xl text-gray-500'>{icon}</div>
       <div className='flex-1'>

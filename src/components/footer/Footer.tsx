@@ -7,7 +7,7 @@ const Footer = () => {
     <motion.footer
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.1, duration: 0.2 }}
+      transition={{ delay: 0.6, duration: 1 }}
       className='flex flex-col w-4/5 items-center mx-auto mt-5 bg-white text-center text-surface dark:bg-neutral-700 dark:text-white'
     >
       <div className='container px-6 pt-6'>

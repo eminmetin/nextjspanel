@@ -42,7 +42,7 @@ const SimpleSlider = () => {
       className='bg-white slider w-full md:w-4/5 mx-auto p-1'
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.3 }}
+      transition={{ duration: 1 }}
     >
       <Slider {...settings}>
         <div className='h-52 relative'>

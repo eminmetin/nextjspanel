@@ -18,10 +18,10 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className='bg-white w-4/5 mx-auto'
+      className='bg-white w-4/5 gap-10 mx-auto'
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.3 }}
+      transition={{ duration: 1 }}
     >
       <NavbarBanner />
       <div className='flex flex-wrap items-center justify-between my-2'>
@@ -32,7 +32,7 @@ const Navbar = () => {
               className='navbar__item text-slate-500 font-extrabold gap-7'
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 * index, duration: 0.2 }}
+              transition={{ delay: 0.2 * index, duration: 1 }}
             >
               <button className='flex items-center space-x-2 hover:bg-gray-100 p-2 rounded'>
                 {menuItem.icon}
@@ -45,7 +45,7 @@ const Navbar = () => {
           className='bg-green-600 mx-0 sm:mx-auto md:mx-auto lg:mx-0 xl:mx-0 2xl:mx-0 hover:bg-green-900 text-white font-1bold py-2 px-8 rounded-full'
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1 * menuItems.length, duration: 0.2 }}
+          transition={{ delay: 0.2 * menuItems.length, duration: 1 }}
         >
           İlan Ver
         </motion.button>

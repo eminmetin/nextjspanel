@@ -28,6 +28,20 @@ const LineChart = ({ className }: any) => {
       legend: false,
     },
     maintainAspectRatio: false,
+    scales: {
+      // to remove the y-axis labels
+      x: {
+        grid: {
+          display: false,
+        },
+      },
+      y: {
+        grid: {
+          drawBorder: false,
+          display: true,
+        },
+      },
+    },
   };
 
   return (
