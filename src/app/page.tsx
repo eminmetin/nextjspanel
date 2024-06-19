@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import LineChartDataSection from '@/components/anlysis/LineChartDataSection';
 import Footer from '@/components/footer/Footer';

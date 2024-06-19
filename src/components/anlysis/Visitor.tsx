@@ -1,8 +1,14 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 
 const Visitor = () => {
   return (
-    <div className='w-full mt-5  font-semibold'>
+    <motion.div
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      className='w-full mt-5  font-semibold'
+    >
       <div className='shadow-xl visitor-bg justify-center items-center flex rounded-md'>
         <div className='visitor w-full'>
           <div className='visitorBanner p-4 rounded-t-md'>
@@ -40,7 +46,7 @@ const Visitor = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

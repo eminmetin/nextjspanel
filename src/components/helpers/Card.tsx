@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 
 interface PacketDetail {
@@ -23,7 +24,12 @@ const Card: React.FC<CardProps> = ({
   className,
 }) => {
   return (
-    <div className='w-full lg:w-1/3 xl:w-1/3 h-full bg-white py-10 px-3 border-gray-200 rounded-lg shadow-md'>
+    <motion.div
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      className='w-full lg:w-1/3 xl:w-1/3 h-full bg-white py-10 px-3 border-gray-200 rounded-lg shadow-md'
+    >
       <div className=''>
         <div className='flex justify-between items-center '>
           <h3 className='text-xl font-semibold'>{title}</h3>
@@ -49,7 +55,7 @@ const Card: React.FC<CardProps> = ({
           </div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
