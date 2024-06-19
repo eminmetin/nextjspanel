@@ -23,7 +23,7 @@ const Card: React.FC<CardProps> = ({
   className,
 }) => {
   return (
-    <div className='w-full lg:w-1/2 xl:w-1/3 h-full bg-white py-9 px-3 border-gray-200 rounded-lg shadow-md'>
+    <div className='w-full lg:w-1/3 xl:w-1/3 h-full bg-white py-10 px-3 border-gray-200 rounded-lg shadow-md'>
       <div className=''>
         <div className='flex justify-between items-center '>
           <h3 className='text-xl font-semibold'>{title}</h3>

@@ -16,6 +16,15 @@
   }
 }
 
+.visitor-bg {
+  background: rgb(109, 102, 246);
+  background: linear-gradient(
+    90deg,
+    rgba(114, 255, 65, 1) -20%,
+    rgba(0, 164, 255, 1) 100%
+  );
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(

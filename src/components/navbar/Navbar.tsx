@@ -25,11 +25,11 @@ const Navbar = () => {
     >
       <NavbarBanner />
       <div className='flex flex-wrap items-center justify-between my-2'>
-        <ul className='flex flex-wrap '>
+        <ul className='flex flex-wrap gap-4 mt-5'>
           {menuItems.map((menuItem, index) => (
             <motion.li
               key={index}
-              className='navbar__item text-slate-500 font-extrabold gap-7'
+              className='navbar__item text-slate-950'
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 * index, duration: 1 }}
