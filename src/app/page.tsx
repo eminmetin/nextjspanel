@@ -49,7 +49,7 @@ const Home = () => {
             className='w-full sm:w-1/3 md:w-1/3 mt-5 sm:mt-0 md:mt-0'
           />
         </div>
-        <div className='flex mx-auto w-4/5'>
+        <div className='w-4/5 flex flex-col sm:flex-row md:flex-row lg:flex-row justify-between mx-auto mt-8 gap-5'>
           <Visitor />
           <Visitor />
           <Visitor />
