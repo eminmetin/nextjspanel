@@ -9,7 +9,7 @@ const Visitor = () => {
       transition={{ duration: 1 }}
       className='w-full mt-5  font-semibold'
     >
-      <div className='shadow-xl visitor-bg justify-center items-center flex rounded-md'>
+      <div className='shadow-xl h-full visitor-bg justify-center items-center flex rounded-md'>
         <div className='visitor w-full'>
           <div className='visitorBanner p-4 rounded-t-md'>
             <p>Ziyaretçi Sayısı (Son 24 Saat)</p>

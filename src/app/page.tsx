@@ -6,6 +6,8 @@ import Card from '@/components/helpers/Card';
 import Navbar from '@/components/navbar/Navbar';
 import SliderComponent from '@/components/slider/SliderComponent';
 import Visitor from '@/components/anlysis/Visitor';
+import Turbo from '@/components/anlysis/Turbo';
+import Calendar from '@/components/anlysis/Calendar';
 
 const Home = () => {
   return (
@@ -52,8 +54,8 @@ const Home = () => {
         </div>
         <div className='w-4/5 flex flex-col sm:flex-row md:flex-row lg:flex-row justify-between mx-auto mt-8 gap-5'>
           <Visitor />
-          <Visitor />
-          <Visitor />
+          <Turbo />
+          <Calendar />
         </div>
       </div>
       <div className='footer'>
