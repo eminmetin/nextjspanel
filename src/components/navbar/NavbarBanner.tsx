@@ -30,18 +30,20 @@ const NavbarBanner = () => {
         </div>
 
         {/* Bildirim */}
-        <div className='border rounded-full  px-2 h-10 flex items-center'>
+        <div className='border rounded-full px-2 h-10 flex items-center'>
           <BsFillBellFill className='text-2xl md:text-lg' />
         </div>
 
         {/* Kullanıcı Bilgileri */}
-        <div className='flex items-center border  rounded-full'>
+        <div className='flex items-center border rounded-full'>
           <span className='border flex ml-1 rounded-full p-1'>
-            <GiFactory className=' md:text-2xl' />
+            <GiFactory className='md:text-2xl' />
           </span>
-          <div className='flex-col sm:h-1/4 px-[1em] sm:px-[.5  em]'>
+          <div className='flex-col sm:h-1/4 px-[1em] sm:px-[.5em]'>
             <p className='font-semibold'>Milton Gayrimenkul</p>
-            <p className='text-slate-400'>Muhammet Emin METİN</p>
+            <p className='text-slate-400 text-xs md:text-sm'>
+              Muhammet Emin METİN
+            </p>
           </div>
         </div>
       </div>

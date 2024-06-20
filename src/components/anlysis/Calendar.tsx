@@ -14,7 +14,7 @@ const Calendar = () => {
       <div className='shadow-xl h-full justify-center bg-white items-start flex rounded-md'>
         <div className='turbo w-full p-2  flex flex-col justify-between'>
           <div className='flex justify-between items-center p-4'>
-            <p className='text-xl'>Turbolar</p>
+            <p className='text-xl'>Ödemelerim</p>
             <p className='text-sm p-0 m-0 text-red-600'>Fatura Detayına Git</p>
           </div>
           <div className='flex flex-col  justify-center items-center flex-grow'>
@@ -26,9 +26,10 @@ const Calendar = () => {
           </div>
           <div className='calendarInfo text-center p-4'>
             <p className='uppercase'>yaklaşan ödemeleriniz var</p>
-            <p className='text-slate-300 text-base'>
+            <p className='text-slate-300 mt-2 text-base'>
               <b className='text-red-600'>15 gün sonra </b>
-              taksit ödemeniz var hatırlatmak istedim {':)'}
+              taksit ödemeniz var hatırlatmak istedik <br />
+              {':)'}
             </p>
           </div>
         </div>

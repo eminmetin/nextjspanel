@@ -12,9 +12,6 @@ import Calendar from '@/components/anlysis/Calendar';
 const Home = () => {
   return (
     <main className='min-h-screen w-full'>
-      <div className='flex flex-col bg-white items-center justify-between w-full'>
-        <Navbar />
-      </div>
       <div className='slider mt-5'>
         <SliderComponent />
         <div className='chart w-4/5 flex flex-col sm:flex-row md:flex-row lg:flex-row justify-between mx-auto mt-8 gap-5'>
@@ -57,9 +54,6 @@ const Home = () => {
           <Turbo />
           <Calendar />
         </div>
-      </div>
-      <div className='footer'>
-        <Footer />
       </div>
     </main>
   );
